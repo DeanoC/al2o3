@@ -1,0 +1,4 @@
+FetchContent_Declare(
+       al2o3_platform
+        GIT_REPOSITORY https://github.com/Deanoc/al2o3_platform
+        GIT_TAG master)
