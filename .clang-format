@@ -1,0 +1,9 @@
+Language:               Cpp
+BasedOnStyle:           LLVM
+
+IndentWidth:            2
+TabWidth:               2
+UseTab:                 Always
+AlighTrailingComments:  true
+BinPackParameters:      false
+BreakBeforeBraces:      BS_Attach
