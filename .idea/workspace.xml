@@ -9,24 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2924d7c-9331-41d3-9c39-60acca92ddd5" name="Default Changelist" comment="moved catch2 to its own repo">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake_modules/DownloadProject.CMakeLists.cmake.in" beforeDir="false" afterPath="$PROJECT_DIR$/cmake_modules/al2o3_downloadproject.CMakeLists.cmake.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake_modules/app_utils.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake_modules/al2o3_app_utils.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake_modules/dir_utils.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake_modules/al2o3_dir_utils.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake_modules/download_module.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake_modules/al2o3_download_module.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake_modules/fetch_utils.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake_modules/al2o3_fetch_utils.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake_modules/lib_utils.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake_modules/al2o3_lib_utils.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake_modules/test_utils.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake_modules/al2o3_test_utils.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/apps/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/apps/test_all_dummy/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/apps/test_all_dummy/dummy.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/libs/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/libs/level0/CMakeLists.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/libs/level0/fetchdeclare_cmakelists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/level0/fetchdeclare_cmakelists.txt" afterDir="false" />
-    </list>
+    <list default="true" id="a2924d7c-9331-41d3-9c39-60acca92ddd5" name="Default Changelist" comment="" />
     <ignored path="cmake-build-debug/_deps/al2o3_platform-src/" />
     <ignored path="cmake-build-debug/al2o3_cmake_utils-src/" />
     <ignored path="cmake-build-debug/CatchOrg_Catch2-src/" />
@@ -55,8 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="23" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+            <state relative-caret-position="148">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -134,8 +117,8 @@
         <option value="$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_catch2-src/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_catch2-src/tests/runner.cpp" />
         <option value="$PROJECT_DIR$/src/libs/level0/fetchdeclare_cmakelists.txt" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/cmake_modules/al2o3_download_module.cmake" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
       </list>
     </option>
   </component>
@@ -234,7 +217,7 @@
       <workItem from="1557134064654" duration="4909000" />
       <workItem from="1557139078002" duration="628000" />
       <workItem from="1557139928261" duration="3254000" />
-      <workItem from="1557167118861" duration="449000" />
+      <workItem from="1557167118861" duration="544000" />
     </task>
     <task id="LOCAL-00001" summary="Begining of per module repo style of distro">
       <created>1556997967120</created>
@@ -264,11 +247,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556999531603</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Moving al2o3 to being just the lists of projects and cmake utils">
+      <created>1557167649537</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1557167649538</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36595000" />
+    <option name="totallyTimeSpent" value="36690000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
@@ -303,7 +293,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Begining of per module repo style of distro" />
     <MESSAGE value="moved catch2 to its own repo" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved catch2 to its own repo" />
+    <MESSAGE value="Moving al2o3 to being just the lists of projects and cmake utils" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moving al2o3 to being just the lists of projects and cmake utils" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_platform-src/include/al2o3_platform/platform_linux.h">
@@ -535,8 +526,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="23" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        <state relative-caret-position="148">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
