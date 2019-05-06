@@ -1,12 +1,15 @@
-FetchContent_Declare(
+DECLARE_FETCH(
        al2o3_platform
-        GIT_REPOSITORY https://github.com/Deanoc/al2o3_platform
-        GIT_TAG master)
-FetchContent_MakeAvailable(al2o3_platform)
+        https://github.com/Deanoc/al2o3_platform
+        master)
 
-FetchContent_Declare(
+DECLARE_FETCH(
        al2o3_catch2
-        GIT_REPOSITORY https://github.com/Deanoc/al2o3_catch2
-        GIT_TAG master)
-FetchContent_MakeAvailable(al2o3_catch2)
+        https://github.com/Deanoc/al2o3_catch2
+        master)
+
+DECLARE_FETCH(
+       al2o3_tinystl
+        https://github.com/Deanoc/al2o3_tinystl
+        master)
 

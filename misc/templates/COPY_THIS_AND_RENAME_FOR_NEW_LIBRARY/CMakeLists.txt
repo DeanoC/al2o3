@@ -12,5 +12,5 @@ ADD_LIB(${LibName} "${Interface}" "${Src}" "${Deps}")
 set( Tests
 		)
 set( TestDeps
-		catch2 )
+		al203_catch2 )
 ADD_LIB_TESTS(${LibName} "${Interface}" "${Tests}" "${TestDeps}")

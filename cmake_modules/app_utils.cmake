@@ -1,0 +1,47 @@
+
+if(APPLE)
+	# We need to compile the interface builder *.xib files to *.nib files to add to the bundle
+	# Make sure we can find the 'ibtool' program. If we can NOT find it we skip generation of this project
+	FIND_PROGRAM( IBTOOL ibtool HINTS "/usr/bin" "${OSX_DEVELOPER_ROOT}/usr/bin" )
+	if ( ${IBTOOL} STREQUAL "IBTOOL-NOTFOUND" )
+		MESSAGE( SEND_ERROR "ibtool can not be found" )
+	ENDIF()
+endif()
+
+MACRO(ADD_CONSOLE_APP AppName Src Deps)
+	set(_src ${Src})
+	set(_deps ${Deps} )
+	add_executable(${AppName} ${_src})
+	target_link_libraries(${AppName} ${LibName})
+	foreach (_dep ${_deps})
+		get_filename_component(deplibname ${_dep} NAME)
+		FETCH_DEPENDENCY(${deplibname})
+		target_link_libraries(${AppName} ${deplibname})
+	endforeach ()
+ENDMACRO()
+
+MACRO(ADD_GUI_APP AppName Src Deps)
+	set(_src ${Src})
+	set(_deps ${Deps} )
+
+	if(APPLE)
+		list(APPEND _src ${LIB_BASE_PATH}/level0/guishell/src/apple/appdelegate.h)
+		list(APPEND _src ${LIB_BASE_PATH}/level0/guishell/src/apple/appdelegate.m)
+		list(APPEND _src ${LIB_BASE_PATH}/level0/guishell/src/apple/macresources/MainMenu.nib)
+	endif()
+
+	add_executable(${AppName}  WIN32 MACOSX_BUNDLE ${_src})
+	target_link_libraries(${AppName} ${LibName} core guishell)
+	foreach (_dep ${_deps})
+		get_filename_component(deplibname ${_dep} NAME)
+		target_link_libraries(${AppName} ${deplibname})
+	endforeach ()
+	if(APPLE)
+		set_target_properties(${AppName} PROPERTIES
+				MACOSX_BUNDLE_GUI_IDENTIFIER com.wryd.${AppName}
+				MACOSX_BUNDLE_INFO_PLIST ${LIB_BASE_PATH}/level0/guishell/src/apple/macresources/Info.plist.in
+				RESOURCE ${LIB_BASE_PATH}/level0/guishell/src/apple/macresources/MainMenu.nib
+				)
+	endif()
+
+ENDMACRO()

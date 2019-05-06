@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="Project" targetName="test_all_dummy" />
+      <config projectName="Project" targetName="al2o3_platform" />
+      <config projectName="Project" targetName="test_al2o3_catch2" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a2924d7c-9331-41d3-9c39-60acca92ddd5" name="Default Changelist" comment="moved catch2 to its own repo">
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_catch2-src/include/al2o3_catch2/catch2.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_catch2-src/tests/runner.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/apps/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/apps/test_all_dummy/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/apps/test_all_dummy/dummy.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/misc/templates/COPY_THIS_AND_RENAME_FOR_NEW_LIBRARY/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/misc/templates/COPY_THIS_AND_RENAME_FOR_NEW_LIBRARY/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/libs/level0/fetchdeclare_cmakelists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/libs/level0/fetchdeclare_cmakelists.txt" afterDir="false" />
+    </list>
+    <ignored path="cmake-build-debug/_deps/al2o3_platform-src/" />
+    <ignored path="cmake-build-debug/al2o3_cmake_utils-src/" />
+    <ignored path="cmake-build-debug/CatchOrg_Catch2-src/" />
+    <ignored path="cmake-build-debug/" />
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/libs/level0/fetchdeclare_cmakelists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_catch2-src/tests/runner.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmake_modules/test_utils.cmake">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmake_modules/lib_utils.cmake">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="825">
+              <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/libs/level0/tester_catch2/tests/runner.cpp" />
+        <option value="$PROJECT_DIR$/cmake_modules/DownloadProject.CMakeLists.cmake.in" />
+        <option value="$PROJECT_DIR$/src/libs/level0/tester_catch2/include/tester_catch2/tester_catch2.hpp" />
+        <option value="$PROJECT_DIR$/src/libs/level0/tester_catch2/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/libs/level0/catch2/include/catch2/catch2.hpp" />
+        <option value="$PROJECT_DIR$/misc/templates/new_library_CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/libs/level0/fetch_cmakelists.txt" />
+        <option value="$PROJECT_DIR$/src/libs/level0/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_platform-src/include/al2o3_platform/core.h" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_platform-src/include/al2o3_platform/platform_android.h" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_platform-src/include/al2o3_platform/platform_posix.h" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_platform-src/include/al2o3_platform/platform_win.h" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_platform-src/include/al2o3_platform/windows.h" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_platform-src/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_platform-src/tests/runner.c" />
+        <option value="$PROJECT_DIR$/src/libs/level0/catch2/tests/runner.cpp" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_platform-src/include/al2o3_platform/platform.h" />
+        <option value="$PROJECT_DIR$/.clang-format" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_platform-src/include/al2o3_platform/debug.h" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_platform-src/src/debug.c" />
+        <option value="$PROJECT_DIR$/misc/templates/COPY_THIS_AND_RENAME_FOR_NEW_LIBRARY/tests/runner.cpp" />
+        <option value="$PROJECT_DIR$/src/libs/level0/catch2/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/misc/templates/COPY_THIS_AND_RENAME_FOR_NEW_LIBRARY/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_tinystl-src/include/al2o3_tinystl/stddef.hpp" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_tinystl-src/include/al2o3_tinystl/unordered_set.hpp" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_tinystl-src/include/al2o3_tinystl/vector.hpp" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_tinystl-src/include/al2o3_tinystl/allocator.hpp" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_tinystl-src/include/al2o3_tinystl/buffer.hpp" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_tinystl-src/include/al2o3_tinystl/hash.hpp" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_tinystl-src/include/al2o3_tinystl/hash_base.hpp" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_tinystl-src/include/al2o3_tinystl/new.hpp" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_tinystl-src/include/al2o3_tinystl/string.hpp" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_tinystl-src/include/al2o3_tinystl/string_view.hpp" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_tinystl-src/include/al2o3_tinystl/traits.hpp" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_tinystl-src/include/al2o3_tinystl/unordered_map.hpp" />
+        <option value="$PROJECT_DIR$/src/apps/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/src/apps/test_all_dummy/dummy.c" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/al2o3_cmake_utils-src/lib_utils.cmake" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/al2o3_cmake_utils-src/app_utils.cmake" />
+        <option value="$PROJECT_DIR$/src/libs/level0/fetchdeclare_cmakelists.txt" />
+        <option value="$PROJECT_DIR$/src/apps/test_all_dummy/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/al2o3_cmake_utils-src/fetch_utils.cmake" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_tinystl-src/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/al2o3_cmake_utils-src/test_utils.cmake" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/cmake_modules/lib_utils.cmake" />
+        <option value="$PROJECT_DIR$/cmake_modules/test_utils.cmake" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_catch2-src/include/al2o3_catch2/catch2.hpp" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_catch2-src/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_catch2-src/tests/runner.cpp" />
+      </list>
+    </option>
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="cyzgZnhx" />
+  </component>
+  <component name="OCResolveContextSettings">
+    <option name="configuration" value="0-al2o3_platform" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-74" />
+    <option name="y" value="3" />
+    <option name="width" value="1940" />
+    <option name="height" value="1100" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="al2o3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="al2o3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="al2o3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="al2o3" type="462c0819:PsiDirectoryNode" />
+              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="al2o3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="al2o3" type="462c0819:PsiDirectoryNode" />
+              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
+              <item name="_deps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="al2o3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="al2o3" type="462c0819:PsiDirectoryNode" />
+              <item name="cmake_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="al2o3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="al2o3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="al2o3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="al2o3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="al2o3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="al2o3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+              <item name="level0" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.advertisement.text.has.clang-format" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_tinystl-src" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\deano\source\al2o3\cmake-build-debug\_deps\al2o3_tinystl-src" />
+      <recent name="C:\Users\deano\source\al2o3\cmake-build-debug\_deps\al2o3_platform-src" />
+      <recent name="C:\Users\deano\source\al2o3\src\libs\level0" />
+      <recent name="C:\Users\deano\source\al2o3\cmake-build-debug\al2o3_cmake_utils-src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\deano\source\al2o3\src\apps\test_all_dummy" />
+      <recent name="C:\Users\deano\source\al2o3\src\apps\test_all_dummy\src" />
+      <recent name="C:\Users\deano\source\al2o3\cmake-build-debug\_deps\al2o3_catch2-src" />
+      <recent name="C:\Users\deano\source\al2o3\misc\templates\COPY_THIS_AND_RENAME_FOR_NEW_LIBRARY" />
+      <recent name="C:\Users\deano\source\al2o3\src\libs\level0\catch2\include\catch2" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="CMake Application.test_al2o3_catch2">
+    <configuration name="al2o3_platform" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="al2o3_platform" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_al2o3_catch2" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="test_al2o3_catch2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="test_al2o3_catch2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test_all_dummy" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Project" TARGET_NAME="test_all_dummy" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Project" RUN_TARGET_NAME="test_all_dummy">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.test_al2o3_catch2" />
+      <item itemvalue="CMake Application.al2o3_platform" />
+      <item itemvalue="CMake Application.test_all_dummy" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a2924d7c-9331-41d3-9c39-60acca92ddd5" name="Default Changelist" comment="" />
+      <created>1556909390056</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556909390056</updated>
+      <workItem from="1556909391249" duration="47000" />
+      <workItem from="1556909521345" duration="1441000" />
+      <workItem from="1556911003728" duration="16204000" />
+      <workItem from="1556995272943" duration="9663000" />
+      <workItem from="1557134064654" duration="4909000" />
+      <workItem from="1557139078002" duration="628000" />
+    </task>
+    <task id="LOCAL-00001" summary="Begining of per module repo style of distro">
+      <created>1556997967120</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1556997967120</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Begining of per module repo style of distro">
+      <created>1556998090068</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1556998090068</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Begining of per module repo style of distro">
+      <created>1556998330346</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1556998330346</updated>
+    </task>
+    <task id="LOCAL-00004" summary="moved catch2 to its own repo">
+      <created>1556999531603</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1556999531603</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="32892000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1554" height="916" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23895583" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3281412" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.403946" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32950193" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.32694763" />
+      <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.32822478" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Cargo" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Begining of per module repo style of distro" />
+    <MESSAGE value="moved catch2 to its own repo" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved catch2 to its own repo" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_platform-src/include/al2o3_platform/platform_osx.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_platform-src/include/al2o3_platform/platform_linux.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_platform-src/include/al2o3_platform/platform_android.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_platform-src/src/logger.c" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_platform-src/tests/runner.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_platform-src/include/al2o3_platform/platform.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6369">
+          <caret line="193" selection-start-line="193" selection-end-line="193" />
+          <folding>
+            <element signature="e#101#134#0" expanded="true" />
+            <element signature="e#1432#1556#0" expanded="true" />
+            <element signature="e#1835#2412#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.clang-format">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_platform-src/include/al2o3_platform/debug.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#2871#3149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_platform-src/src/debug.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+            <element signature="e#157#217#0" expanded="true" />
+            <element signature="e#2356#2440#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/templates/COPY_THIS_AND_RENAME_FOR_NEW_LIBRARY/include/RENAME_TO_LIBRARY_NAME/dummy.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/templates/COPY_THIS_AND_RENAME_FOR_NEW_LIBRARY/src/dummy.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc/templates/COPY_THIS_AND_RENAME_FOR_NEW_LIBRARY/tests/runner.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_catch2-src/include/catch2/catch2.hpp" />
+    <entry file="file://$PROJECT_DIR$/cmake_modules/DownloadProject.CMakeLists.cmake.in">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_tinystl-src/include/al2o3_tinystl/dummy.h" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_tinystl-src/tests/runner.cpp" />
+    <entry file="file://$PROJECT_DIR$/misc/templates/COPY_THIS_AND_RENAME_FOR_NEW_LIBRARY/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_tinystl-src/include/al2o3_tinystl/unordered_set.hpp" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_tinystl-src/include/al2o3_tinystl/vector.hpp" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_tinystl-src/include/al2o3_tinystl/allocator.hpp" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_tinystl-src/include/al2o3_tinystl/buffer.hpp" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_tinystl-src/include/al2o3_tinystl/hash.hpp" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_tinystl-src/include/al2o3_tinystl/hash_base.hpp" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_tinystl-src/include/al2o3_tinystl/new.hpp" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_tinystl-src/include/al2o3_tinystl/stddef.hpp" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_tinystl-src/include/al2o3_tinystl/unordered_map.hpp" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_tinystl-src/include/al2o3_tinystl/traits.hpp" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_tinystl-src/include/al2o3_tinystl/string_view.hpp" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_tinystl-src/include/al2o3_tinystl/string.hpp" />
+    <entry file="file://$APPLICATION_HOME_DIR$/bin/cmake/win/share/cmake-3.14/Modules/FetchContent.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="666" column="48" selection-start-line="666" selection-start-column="48" selection-end-line="666" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/apps/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/libs/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/libs/level0/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/al2o3_cmake_utils-src/lib_utils.cmake" />
+    <entry file="file://$PROJECT_DIR$/src/apps/test_all_dummy/dummy.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/al2o3_cmake_utils-src/app_utils.cmake" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_platform-src/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="17" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/al2o3_cmake_utils-src/fetch_utils.cmake" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/al2o3_cmake_utils-src/test_utils.cmake" />
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-41">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/apps/test_all_dummy/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake_modules/download_module.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_tinystl-src/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_catch2-subbuild/al2o3_catch2-populate-prefix/tmp/al2o3_catch2-populate-gitupdate.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2706">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake_modules/test_utils.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_catch2-src/include/al2o3_catch2/catch2.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake_modules/lib_utils.cmake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_catch2-src/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/libs/level0/fetchdeclare_cmakelists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_catch2-src/tests/runner.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
