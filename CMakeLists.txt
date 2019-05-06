@@ -1,11 +1,10 @@
 cmake_minimum_required(VERSION 3.13 FATAL_ERROR)
-
 include (FetchContent)
-include (cmake_modules/download_module.cmake)
 
 option(FETCH_CMAKE_UTILS_FROM_REPO "Fetch the cmake_utils takes some time, default it to use interal copy" 0)
 
 if(${FETCH_CMAKE_UTILS_FROM_REPO})
+	include (cmake_modules/download_module.cmake)
 	download_project(
 			PROJ al2o3_cmake_utils
 			GIT_REPOSITORY https://github.com/DeanoC/al2o3_cmake_utils
@@ -16,19 +15,12 @@ else()
 	set( al2o3_cmake_modules ${CMAKE_CURRENT_SOURCE_DIR}/cmake_modules)
 endif()
 
-include (${al2o3_cmake_modules}/fetch_utils.cmake)
-include (${al2o3_cmake_modules}/app_utils.cmake)
-include (${al2o3_cmake_modules}/dir_utils.cmake)
-include (${al2o3_cmake_modules}/lib_utils.cmake)
-include (${al2o3_cmake_modules}/test_utils.cmake)
+set( CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${al2o3_cmake_modules})
 
-option(BUILD_TESTS "Build Test executubles" ON)
+include (al2o3_fetch_utils)
+include (al2o3_app_utils)
+include (al2o3_dir_utils)
+include (al2o3_lib_utils)
+include (al2o3_test_utils)
 
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/out_libs)
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/out_bin)
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/out_bin)
-
-set(LIB_BASE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/src/libs/)
-#set(APP_BASE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/src/apps/)
-
-add_subdirectory(src)
+include (level0/fetchdeclare_cmakelists.txt)
