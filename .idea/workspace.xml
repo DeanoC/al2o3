@@ -9,7 +9,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2924d7c-9331-41d3-9c39-60acca92ddd5" name="Default Changelist" comment="" />
+    <list default="true" id="a2924d7c-9331-41d3-9c39-60acca92ddd5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="cmake-build-debug/_deps/al2o3_platform-src/" />
     <ignored path="cmake-build-debug/al2o3_cmake_utils-src/" />
     <ignored path="cmake-build-debug/CatchOrg_Catch2-src/" />
@@ -35,11 +37,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="231">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="429">
+                <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -47,7 +61,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmake_modules/al2o3_download_module.cmake">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
+            <state relative-caret-position="5313">
               <caret line="161" column="53" selection-start-line="161" selection-start-column="53" selection-end-line="161" selection-end-column="53" />
             </state>
           </provider>
@@ -68,7 +82,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cmake_modules/DownloadProject.CMakeLists.cmake.in" />
         <option value="$PROJECT_DIR$/src/libs/level0/tester_catch2/include/tester_catch2/tester_catch2.hpp" />
         <option value="$PROJECT_DIR$/src/libs/level0/tester_catch2/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/src/libs/level0/catch2/include/catch2/catch2.hpp" />
@@ -119,6 +132,7 @@
         <option value="$PROJECT_DIR$/src/libs/level0/fetchdeclare_cmakelists.txt" />
         <option value="$PROJECT_DIR$/cmake_modules/al2o3_download_module.cmake" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -136,7 +150,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -158,6 +171,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -218,6 +232,7 @@
       <workItem from="1557139078002" duration="628000" />
       <workItem from="1557139928261" duration="3254000" />
       <workItem from="1557167118861" duration="544000" />
+      <workItem from="1557170435197" duration="56000" />
     </task>
     <task id="LOCAL-00001" summary="Begining of per module repo style of distro">
       <created>1556997967120</created>
@@ -254,17 +269,24 @@
       <option name="project" value="LOCAL" />
       <updated>1557167649538</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Update readme">
+      <created>1557170475210</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1557170475210</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36690000" />
+    <option name="totallyTimeSpent" value="36746000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20176406" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20396914" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -278,7 +300,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32950193" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="CMake" order="11" visible="true" weight="0.32606438" />
+      <window_info anchor="bottom" id="CMake" order="11" visible="true" weight="0.32606438" />
       <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.26687434" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -294,12 +316,10 @@
     <MESSAGE value="Begining of per module repo style of distro" />
     <MESSAGE value="moved catch2 to its own repo" />
     <MESSAGE value="Moving al2o3 to being just the lists of projects and cmake utils" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moving al2o3 to being just the lists of projects and cmake utils" />
+    <MESSAGE value="Update readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update readme" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_platform-src/include/al2o3_platform/platform_linux.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_platform-src/include/al2o3_platform/platform_android.h">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -398,28 +418,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/apps/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CMakeLists.txt" />
+    <entry file="file://$PROJECT_DIR$/src/apps/CMakeLists.txt" />
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/al2o3_cmake_utils-src/lib_utils.cmake" />
-    <entry file="file://$PROJECT_DIR$/src/apps/test_all_dummy/dummy.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/apps/test_all_dummy/dummy.c" />
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/al2o3_cmake_utils-src/app_utils.cmake" />
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_platform-src/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -430,13 +432,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/al2o3_cmake_utils-src/fetch_utils.cmake" />
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/al2o3_cmake_utils-src/test_utils.cmake" />
-    <entry file="file://$PROJECT_DIR$/src/apps/test_all_dummy/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/apps/test_all_dummy/CMakeLists.txt" />
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/_deps/al2o3_tinystl-src/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -496,6 +492,8 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/libs/CMakeLists.txt" />
+    <entry file="file://$PROJECT_DIR$/level0/CMakeLists.txt" />
     <entry file="file://$PROJECT_DIR$/level0/fetchdeclare_cmakelists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -503,31 +501,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/libs/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/level0/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cmake_modules/al2o3_download_module.cmake">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
+        <state relative-caret-position="5313">
           <caret line="161" column="53" selection-start-line="161" selection-start-column="53" selection-end-line="161" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="231">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="429">
+            <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
