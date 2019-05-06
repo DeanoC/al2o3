@@ -11,7 +11,7 @@ Assuming you have a modern version of CMake, adding
 include(FetchContent)
 FetchContent_Declare( al2o3 GIT_REPOSITORY https://github.com/DeanoC/al2o3 GIT_TAG master )
 FetchContent_GetProperties(al2o3)
-if(NOT ${contentNameLower}_POPULATED)
+if(NOT al2o3_POPULATED)
 	FetchContent_Populate(al2o3)
 endif()
 add_subdirectory(${al2o3_SOURCE_DIR} ${al2o3_BINARY_DIR})
