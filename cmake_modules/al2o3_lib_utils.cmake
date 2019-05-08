@@ -23,6 +23,10 @@ MACRO(ADD_LIB LibName Headers Src Deps)
 					${CMAKE_CURRENT_SOURCE_DIR}/include
 				PRIVATE
 					${CMAKE_CURRENT_SOURCE_DIR}/src )
+		if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/LICENSE)
+			configure_file(${CMAKE_CURRENT_SOURCE_DIR}/LICENSE
+					${CMAKE_ARCHIVE_OUTPUT_DIRECTORY}/${LibName}_LICENSE COPYONLY)
+		endif()
 	else()
 		add_library( ${LibName} INTERFACE )
 		foreach (_dep ${_deps})
@@ -33,6 +37,10 @@ MACRO(ADD_LIB LibName Headers Src Deps)
 
 		target_include_directories( ${LibName}
 				INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/include )
+		if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/LICENSE)
+			configure_file(${CMAKE_CURRENT_SOURCE_DIR}/LICENSE
+					${CMAKE_ARCHIVE_OUTPUT_DIRECTORY}/${LibName}_LICENSE COPYONLY)
+		endif()
 	endif()
 ENDMACRO()
 
