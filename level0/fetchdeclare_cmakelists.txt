@@ -17,3 +17,8 @@ DECLARE_FETCH(
        al2o3_os
         https://github.com/Deanoc/al2o3_os
         master)
+
+DECLARE_FETCH(
+       al2o3_sstl
+        https://github.com/Deanoc/al2o3_sstl
+        master)
