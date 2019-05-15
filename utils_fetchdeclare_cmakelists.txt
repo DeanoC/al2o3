@@ -1,0 +1,4 @@
+DECLARE_FETCH(
+       utils_simple_logmanager
+        https://github.com/Deanoc/utils_simple_logmanager
+        master)

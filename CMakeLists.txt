@@ -24,3 +24,4 @@ include (al2o3_lib_utils)
 include (al2o3_test_utils)
 
 include (base_fetchdeclare_cmakelists.txt)
+include (utils_fetchdeclare_cmakelists.txt)
