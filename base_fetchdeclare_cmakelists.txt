@@ -12,6 +12,11 @@ DECLARE_FETCH(
        al2o3_tinystl
         https://github.com/Deanoc/al2o3_tinystl
         master)
+        
+DECLARE_FETCH(
+       al2o3_vfile
+        https://github.com/Deanoc/al2o3_vfile
+        master)
 
 DECLARE_FETCH(
        al2o3_os
