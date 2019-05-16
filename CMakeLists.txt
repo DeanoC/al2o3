@@ -22,6 +22,8 @@ include (al2o3_app_utils)
 include (al2o3_dir_utils)
 include (al2o3_lib_utils)
 include (al2o3_test_utils)
+include (al2o3_linktimeinterface)
 
 include (base_fetchdeclare_cmakelists.txt)
 include (utils_fetchdeclare_cmakelists.txt)
+include (gfx_fetchdeclare_cmakelists.txt)

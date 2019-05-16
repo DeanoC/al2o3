@@ -42,3 +42,13 @@ DECLARE_FETCH(
        al2o3_miniz
         https://github.com/Deanoc/al2o3_miniz
         master)
+
+DECLARE_FETCH(
+       al2o3_stb
+        https://github.com/Deanoc/al2o3_stb
+        master)
+
+DECLARE_FETCH(
+       al2o3_syoyo
+        https://github.com/Deanoc/al2o3_syoyo
+        master)
