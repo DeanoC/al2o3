@@ -1,0 +1,16 @@
+DECLARE_FETCH(
+       gfx_imageformat
+        https://github.com/Deanoc/gfx_imageformat
+        master)
+DECLARE_FETCH(
+       gfx_image_interface
+        https://github.com/Deanoc/gfx_image_interface
+        master)
+DECLARE_FETCH(
+       gfx_image_impl_basic
+        https://github.com/Deanoc/gfx_image_impl_basic
+        master)
+DECLARE_FETCH(
+       gfx_imageio
+        https://github.com/Deanoc/gfx_image_impl_basic
+        master)
