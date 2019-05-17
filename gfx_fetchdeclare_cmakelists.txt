@@ -12,5 +12,5 @@ DECLARE_FETCH(
         master)
 DECLARE_FETCH(
        gfx_imageio
-        https://github.com/Deanoc/gfx_image_impl_basic
+        https://github.com/Deanoc/gfx_imageio
         master)
