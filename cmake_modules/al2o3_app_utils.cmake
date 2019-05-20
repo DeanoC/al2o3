@@ -1,12 +1,4 @@
 
-if(APPLE)
-	# We need to compile the interface builder *.xib files to *.nib files to add to the bundle
-	# Make sure we can find the 'ibtool' program. If we can NOT find it we skip generation of this project
-	FIND_PROGRAM( IBTOOL ibtool HINTS "/usr/bin" "${OSX_DEVELOPER_ROOT}/usr/bin" )
-	if ( ${IBTOOL} STREQUAL "IBTOOL-NOTFOUND" )
-		MESSAGE( SEND_ERROR "ibtool can not be found" )
-	ENDIF()
-endif()
 
 MACRO(ADD_CONSOLE_APP AppName Src Deps)
 	set(_src ${Src})

@@ -26,46 +26,53 @@ MACRO(ADD_LIB_TESTS LibName Headers Tests Deps)
 	endif()
 ENDMACRO()
 
-MACRO(ADD_LIB_GUITESTS LibName Headers Tests Deps)
+MACRO(ADD_LIB_GUITESTS LibName Headers Tests Deps ShellInterface)
 	if(BUILD_TESTS)
 		set(_headers ${Headers})
 		list(TRANSFORM _headers PREPEND include/${LibName}/ )
 
 		set(_tests ${Tests})
 		set(_deps ${Deps} )
+
 		if (DEFINED _tests)
 			list(LENGTH _tests _TestsLength)
 		endif ()
-
-		if (DEFINED _deps)
-			list(TRANSFORM _deps PREPEND ${LIB_BASE_PATH})
-			set(_depsc ${_deps})
-			list(TRANSFORM _depsc APPEND /include)
-		endif()
-
 		if (_TestsLength)
 			list(TRANSFORM _tests PREPEND tests/)
-			if(APPLE)
-				list(APPEND _tests ${LIB_BASE_PATH}/level0/guishell/src/apple/appdelegate.h)
-				list(APPEND _tests ${LIB_BASE_PATH}/level0/guishell/src/apple/appdelegate.m)
-				list(APPEND _tests ${LIB_BASE_PATH}/level0/guishell/src/apple/macresources/MainMenu.nib)
-			endif()
-			add_executable(${LibName}_tests WIN32 MACOSX_BUNDLE ${_tests} ${_headers})
-			target_link_libraries(${LibName}_tests ${LibName} core guishell)
+			add_executable(test_${LibName} WIN32 MACOSX_BUNDLE ${_tests} ${_headers})
 			foreach (_dep ${_deps})
 				get_filename_component(deplibname ${_dep} NAME)
-				target_link_libraries(${LibName}_tests ${deplibname})
+				FETCH_DEPENDENCY(${deplibname})
+				target_link_libraries(test_${LibName} PRIVATE ${deplibname})
 			endforeach ()
+			target_link_libraries(test_${LibName} PRIVATE ${LibName})
+			target_include_directories(test_${LibName} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/tests)
+			if (APPLE)
+				if( NOT "Info.plist.in" IN_LIST Tests)
+					configure_file(${${ShellInterface}_SOURCE_DIR}/default_macresources/Info.plist.in
+							${CMAKE_CURRENT_BINARY_DIR}/Info.plist.in COPYONLY)
+				endif()
+				set(_src_mainmenu_xib ${${ShellInterface}_SOURCE_DIR}/default_macresources/MainMenu.xib)
 
-			target_include_directories(${LibName}_tests PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/tests)
-			target_include_directories(${LibName}_tests PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
-			target_include_directories(${LibName}_tests PRIVATE ${_depsc})
+				if(  "MainMenu.xib" IN_LIST Tests)
+					set(_src_mainmenu_xib ${CMAKE_CURRENT_SOURCE_DIR}/Src/MainMenu.xib)
+				endif()
+				target_sources(test_${LibName} PRIVATE MainMenu.nib)
 
-			if(APPLE)
-				set_target_properties(${LibName}_tests PROPERTIES
-						MACOSX_BUNDLE_GUI_IDENTIFIER com.wryd.${LibName}_tests
-						MACOSX_BUNDLE_INFO_PLIST ${LIB_BASE_PATH}/level0/guishell/src/apple/macresources/Info.plist.in
-						RESOURCE ${LIB_BASE_PATH}/level0/guishell/src/apple/macresources/MainMenu.nib
+				add_custom_command(
+						OUTPUT MainMenu.nib
+						COMMAND ${IBTOOL} --output-format binary1 --compile MainMenu.nib ${_src_mainmenu_xib}
+				)
+
+				if( NOT "appdelegate.h" IN_LIST Tests)
+					target_sources(test_${LibName} PRIVATE ${${ShellInterface}_SOURCE_DIR}/default_macresources/appdelegate.h)
+					target_sources(test_${LibName} PRIVATE ${${ShellInterface}_SOURCE_DIR}/default_macresources/appdelegate.m)
+				endif()
+				target_link_libraries(test_${LibName} PRIVATE stdc++ "-framework Foundation" "-framework Cocoa" objc)
+				set_target_properties(test_${LibName} PROPERTIES
+						MACOSX_BUNDLE_GUI_IDENTIFIER com.al2o3.test_${LibName}
+						MACOSX_BUNDLE_INFO_PLIST ${CMAKE_CURRENT_BINARY_DIR}/Info.plist.in
+						RESOURCE MainMenu.nib
 						)
 			endif()
 		endif ()

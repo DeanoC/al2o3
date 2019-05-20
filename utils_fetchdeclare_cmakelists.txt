@@ -8,6 +8,10 @@ DECLARE_FETCH(
         https://github.com/Deanoc/utils_misccpp
         master)
 DECLARE_FETCH(
-       utils_gameappshell
-        https://github.com/Deanoc/utils_gameappshell
+       utils_gameappshell_interface
+        https://github.com/Deanoc/utils_gameappshell_interface
+        master)
+DECLARE_FETCH(
+       utils_gameappshell_impl_basic
+        https://github.com/Deanoc/utils_gameappshell_impl_basic
         master)
