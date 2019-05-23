@@ -5,6 +5,8 @@ Its based on CMake and github and relys on al2o3 basically being a curated list 
 
 The actual libraries are pulled from many open source projects, with often thin interfaces to make them work well together and in the same style as each other.
 
+The libraries supported are in the fetchdeclare_cmakelist.txt files. Yes I need to a lists and docs etc.
+
 Assuming you have a modern version of CMake, adding 
 
 ```
