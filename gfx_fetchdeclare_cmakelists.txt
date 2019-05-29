@@ -14,3 +14,7 @@ DECLARE_FETCH(
        gfx_imageio
         https://github.com/Deanoc/gfx_imageio
         master)
+DECLARE_FETCH(
+       gfx_meshmod
+        https://github.com/Deanoc/gfx_meshmod
+        master)
