@@ -7,7 +7,10 @@ DECLARE_FETCH(
        al2o3_memory
         https://github.com/Deanoc/al2o3_memory
         master)
-
+DECLARE_FETCH(
+       al2o3_cadt
+        https://github.com/Deanoc/al2o3_cadt
+        master)
 DECLARE_FETCH(
        al2o3_catch2
         https://github.com/Deanoc/al2o3_catch2
