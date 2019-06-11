@@ -1,0 +1,4 @@
+DECLARE_FETCH(
+       data_binify
+        https://github.com/Deanoc/util_binify
+        master)
