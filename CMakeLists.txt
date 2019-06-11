@@ -13,4 +13,5 @@ include(al2o3_linktimeinterface)
 # include the library lists
 include(base_fetchdeclare_cmakelists.txt)
 include(utils_fetchdeclare_cmakelists.txt)
+include(data_fetchdeclare_cmakelists.txt)
 include(gfx_fetchdeclare_cmakelists.txt)
