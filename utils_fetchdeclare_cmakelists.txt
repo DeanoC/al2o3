@@ -15,3 +15,11 @@ DECLARE_FETCH(
        utils_gameappshell_impl_basic
         https://github.com/Deanoc/utils_gameappshell_impl_basic
         master)
+DECLARE_FETCH(
+       EASTL
+        https://github.com/electronicarts/EASTL.git
+        master)
+DECLARE_FETCH(
+       fmt
+        https://github.com/fmtlib/fmt.git
+        master)

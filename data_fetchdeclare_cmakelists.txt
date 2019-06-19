@@ -1,4 +1,21 @@
 DECLARE_FETCH(
+       data_bufferutils
+        https://github.com/Deanoc/data_bufferutils
+        master)
+
+DECLARE_FETCH(
        data_binify
         https://github.com/Deanoc/data_binify
+        master)
+DECLARE_FETCH(
+       data_binnybundle
+        https://github.com/Deanoc/data_binnybundle
+        master)
+DECLARE_FETCH(
+       data_binnybundlewriter
+        https://github.com/Deanoc/data_binnybundlewriter
+        master)
+DECLARE_FETCH(
+       data_resourcemanager
+        https://github.com/Deanoc/data_resourcemanager
         master)
