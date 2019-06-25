@@ -32,11 +32,6 @@ DECLARE_FETCH(
         master)
 
 DECLARE_FETCH(
-       al2o3_sstl
-        https://github.com/Deanoc/al2o3_sstl
-        master)
-
-DECLARE_FETCH(
        al2o3_cmath
         https://github.com/Deanoc/al2o3_cmath
         master)
