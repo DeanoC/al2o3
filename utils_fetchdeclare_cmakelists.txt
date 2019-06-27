@@ -23,3 +23,7 @@ DECLARE_FETCH(
        fmt
         https://github.com/fmtlib/fmt.git
         master)
+DECLARE_FETCH(
+       tiny_ktx
+        https://github.com/DeanoC/tiny_ktx
+        master)
