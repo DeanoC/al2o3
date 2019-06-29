@@ -7,3 +7,7 @@ DECLARE_FETCH(
        lua_image
         https://github.com/Deanoc/lua_image
         master)
+DECLARE_FETCH(
+       lua_al2o3_os
+        https://github.com/Deanoc/lua_al2o3_os
+        master)
