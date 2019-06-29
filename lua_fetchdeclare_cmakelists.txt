@@ -1,1 +1,9 @@
+DECLARE_FETCH(
+       lua_base5.3
+        https://github.com/Deanoc/lua_base5.3
+        master)
 
+DECLARE_FETCH(
+       lua_image
+        https://github.com/Deanoc/lua_image
+        master)
