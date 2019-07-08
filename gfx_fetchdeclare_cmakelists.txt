@@ -15,6 +15,11 @@ DECLARE_FETCH(
         https://github.com/Deanoc/gfx_imageio
         master)
 DECLARE_FETCH(
+       gfx_imagecompress
+        https://github.com/Deanoc/gfx_imagecompress
+        master)
+
+DECLARE_FETCH(
        gfx_meshmod
         https://github.com/Deanoc/gfx_meshmod
         master)
