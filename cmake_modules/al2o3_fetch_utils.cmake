@@ -1,9 +1,14 @@
+get_filename_component(fetchdeps_base "../fetchdeps"
+		REALPATH BASE_DIR "${CMAKE_BINARY_DIR}")
+set(FETCHCONTENT_BASE_DIR ${fetchdeps_base})
+
 macro(DECLARE_FETCH PROJ GIT_REPO GIT_TAG)
 	get_property(_${PROJ}_isFetchable GLOBAL PROPERTY ${PROJ}_FETCHABLE)
 	if(NOT _${PROJ}_isFetchable EQUAL 1)
 		FetchContent_Declare( ${PROJ}
 				GIT_REPOSITORY ${GIT_REPO}
-				GIT_TAG ${GIT_TAG} )
+				GIT_TAG ${GIT_TAG}
+				)
 		set_property(GLOBAL PROPERTY ${PROJ}_FETCHABLE 1)
 	endif()
 endmacro()
