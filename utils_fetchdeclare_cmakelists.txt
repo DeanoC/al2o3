@@ -2,7 +2,6 @@ DECLARE_FETCH(
        utils_simple_logmanager
         https://github.com/Deanoc/utils_simple_logmanager
         master)
-
 DECLARE_FETCH(
        utils_misccpp
         https://github.com/Deanoc/utils_misccpp
@@ -16,12 +15,8 @@ DECLARE_FETCH(
         https://github.com/Deanoc/utils_gameappshell_impl_basic
         master)
 DECLARE_FETCH(
-       EASTL
-        https://github.com/electronicarts/EASTL.git
-        master)
-DECLARE_FETCH(
-       fmt
-        https://github.com/fmtlib/fmt.git
+       utils_fmt
+        https://github.com/DeanoC/utils_fmt.git
         master)
 DECLARE_FETCH(
        tiny_ktx
