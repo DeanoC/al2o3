@@ -27,3 +27,7 @@ DECLARE_FETCH(
        gfx_meshmodio
         https://github.com/Deanoc/gfx_meshmodio
         master)
+DECLARE_FETCH(
+       gfx_theforge
+        https://github.com/Deanoc/The-Forge
+        master)
