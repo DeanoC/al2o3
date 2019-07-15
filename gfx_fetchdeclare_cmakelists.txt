@@ -1,33 +1,37 @@
 DECLARE_FETCH(
        gfx_imageformat
-        https://github.com/Deanoc/gfx_imageformat
+        https://github.com/DeanoC/gfx_imageformat
         master)
 DECLARE_FETCH(
        gfx_image_interface
-        https://github.com/Deanoc/gfx_image_interface
+        https://github.com/DeanoC/gfx_image_interface
         master)
 DECLARE_FETCH(
        gfx_image_impl_basic
-        https://github.com/Deanoc/gfx_image_impl_basic
+        https://github.com/DeanoC/gfx_image_impl_basic
         master)
 DECLARE_FETCH(
        gfx_imageio
-        https://github.com/Deanoc/gfx_imageio
+        https://github.com/DeanoC/gfx_imageio
         master)
 DECLARE_FETCH(
        gfx_imagecompress
-        https://github.com/Deanoc/gfx_imagecompress
+        https://github.com/DeanoC/gfx_imagecompress
         master)
-
 DECLARE_FETCH(
        gfx_meshmod
-        https://github.com/Deanoc/gfx_meshmod
+        https://github.com/DeanoC/gfx_meshmod
         master)
 DECLARE_FETCH(
        gfx_meshmodio
-        https://github.com/Deanoc/gfx_meshmodio
+        https://github.com/DeanoC/gfx_meshmodio
         master)
 DECLARE_FETCH(
        gfx_theforge
-        https://github.com/Deanoc/The-Forge
+        https://github.com/DeanoC/The-Forge
+        master)
+
+DECLARE_FETCH(
+       gfx_spirvcross
+        https://github.com/DeanoC/SPIRV-Cross.git
         master)
