@@ -51,3 +51,7 @@ DECLARE_FETCH(
        gfx_shaderc
         https://github.com/DeanoC/shaderc.git
         master)
+DECLARE_FETCH(
+       gfx_shadercompiler
+        https://github.com/DeanoC/gfx_shadercompiler.git
+        master)
