@@ -26,12 +26,28 @@ DECLARE_FETCH(
        gfx_meshmodio
         https://github.com/DeanoC/gfx_meshmodio
         master)
+
 DECLARE_FETCH(
        gfx_theforge
         https://github.com/DeanoC/The-Forge
         master)
-
+DECLARE_FETCH(
+       gfx_spirvheaders
+        https://github.com/DeanoC/SPIRV-Headers.git
+        master)
 DECLARE_FETCH(
        gfx_spirvcross
         https://github.com/DeanoC/SPIRV-Cross.git
+        master)
+DECLARE_FETCH(
+       gfx_glslang
+        https://github.com/DeanoC/glslang.git
+        master)
+DECLARE_FETCH(
+       gfx_spirvtools
+        https://github.com/DeanoC/SPIRV-Tools.git
+        master)
+DECLARE_FETCH(
+       gfx_shaderc
+        https://github.com/DeanoC/shaderc.git
         master)
