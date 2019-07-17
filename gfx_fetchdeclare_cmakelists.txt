@@ -55,3 +55,11 @@ DECLARE_FETCH(
        gfx_shadercompiler
         https://github.com/DeanoC/gfx_shadercompiler.git
         master)
+DECLARE_FETCH(
+        gfx_imgui
+        https://github.com/DeanoC/imgui.git
+        master)
+DECLARE_FETCH(
+        gfx_imgui_al2o3_theforge_bindings
+        https://github.com/DeanoC/gfx_imgui_al2o3_theforge_bindings.git
+        master)
