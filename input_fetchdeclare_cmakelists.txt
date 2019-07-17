@@ -1,0 +1,14 @@
+DECLARE_FETCH(
+       input_gainput
+        https://github.com/Deanoc/gainput
+        master)
+
+DECLARE_FETCH(
+       input_basic_interface
+        https://github.com/Deanoc/input_basic_interface
+        master)
+
+DECLARE_FETCH(
+       input_basic_impl_gainput
+        https://github.com/Deanoc/input_basic_impl_gainput
+        master)
