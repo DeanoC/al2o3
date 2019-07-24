@@ -1,6 +1,6 @@
 DECLARE_FETCH(
-       gfx_imageformat
-        https://github.com/DeanoC/gfx_imageformat
+       tiny_imageformat
+        https://github.com/DeanoC/tiny_imageformat
         master)
 DECLARE_FETCH(
        gfx_image_interface
