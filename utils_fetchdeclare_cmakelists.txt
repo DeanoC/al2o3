@@ -22,3 +22,7 @@ DECLARE_FETCH(
        tiny_ktx
         https://github.com/DeanoC/tiny_ktx
         master)
+DECLARE_FETCH(
+       tiny_dds
+        https://github.com/DeanoC/tiny_dds
+        master)
