@@ -55,3 +55,8 @@ DECLARE_FETCH(
        al2o3_syoyo
         https://github.com/Deanoc/al2o3_syoyo
         master)
+DECLARE_FETCH(
+       al2o3_enki
+        https://github.com/DeanoC/enkiTS.git
+        master)
+
