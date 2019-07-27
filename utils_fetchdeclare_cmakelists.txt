@@ -26,3 +26,7 @@ DECLARE_FETCH(
        tiny_dds
         https://github.com/DeanoC/tiny_dds
         master)
+DECLARE_FETCH(
+       utils_nativefiledialogs
+        https://github.com/DeanoC/nativefiledialog.git
+        master)
