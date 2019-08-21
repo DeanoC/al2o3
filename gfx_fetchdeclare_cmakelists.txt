@@ -19,6 +19,10 @@ DECLARE_FETCH(
         https://github.com/DeanoC/gfx_imagecompress
         master)
 DECLARE_FETCH(
+       gfx_imagedecompress
+        https://github.com/DeanoC/gfx_imagedecompress
+        master)
+DECLARE_FETCH(
        gfx_meshmod
         https://github.com/DeanoC/gfx_meshmod
         master)
