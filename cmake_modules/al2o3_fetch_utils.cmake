@@ -1,5 +1,5 @@
 get_property(_global_fetchdeps_base GLOBAL PROPERTY GLOBAL_FETCHDEPS_BASE)
-if( ${_global_fetchdeps_base} EQUAL "")
+if( "${_global_fetchdeps_base}" STREQUAL "")
 	get_filename_component(fetchdeps_base "../fetchdeps"
 			REALPATH BASE_DIR "${CMAKE_BINARY_DIR}")
 	set(FETCHCONTENT_BASE_DIR ${fetchdeps_base})
