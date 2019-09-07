@@ -1,0 +1,8 @@
+DECLARE_FETCH(
+       render_basics_interface
+        https://github.com/Deanoc/render_basics_interface
+        master)
+DECLARE_FETCH(
+       render_basics_impl_theforge
+        https://github.com/Deanoc/render_basics_impl_theforge
+        master)
