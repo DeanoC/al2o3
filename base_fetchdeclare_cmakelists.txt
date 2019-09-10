@@ -55,8 +55,13 @@ DECLARE_FETCH(
        al2o3_syoyo
         https://github.com/Deanoc/al2o3_syoyo
         master)
+        
 DECLARE_FETCH(
        al2o3_enki
         https://github.com/DeanoC/enkiTS.git
         master)
 
+DECLARE_FETCH(
+       base_pxfoundations
+       https://github.com/DeanoC/base_pxfoundations.git
+       master)
