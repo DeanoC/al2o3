@@ -1,0 +1,4 @@
+DECLARE_FETCH(
+       physics_physx4
+       https://github.com/DeanoC/physics_physx4.git
+       master)
