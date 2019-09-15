@@ -14,6 +14,10 @@ macro(DECLARE_FETCH PROJ GIT_REPO GIT_TAG)
 				GIT_REPOSITORY ${GIT_REPO}
 				GIT_TAG ${GIT_TAG}
 				)
+		if( EXISTS ${FETCHCONTENT_BASE_DIR}/${PROJ})
+			string(TOUPPER ${PROJ} _tmp)
+			set(FETCHCONTENT_SOURCE_DIR_${_tmp} ${FETCHCONTENT_BASE_DIR}/${PROJ})
+		endif()
 		set_property(GLOBAL PROPERTY ${PROJ}_FETCHABLE 1)
 	endif()
 endmacro()
