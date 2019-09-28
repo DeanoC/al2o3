@@ -1,4 +1,4 @@
-MACRO(ADD_LIB_TESTS LibName Headers Tests Deps)
+MACRO(ADD_LIB_TESTS LibName Headers Tests Deps, BUILD_TESTS)
 	if(BUILD_TESTS)
 		set(_headers ${Headers})
 		list(TRANSFORM _headers PREPEND include/${LibName}/ )
