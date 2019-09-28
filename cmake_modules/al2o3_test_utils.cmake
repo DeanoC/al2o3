@@ -1,5 +1,5 @@
 MACRO(ADD_LIB_TESTS LibName Headers Tests Deps)
-	get_property(_build_tests GLOBAL PROPERTY GLOBAL_BUILD_TESTS)
+	option(_build_tests "unittests" OFF)
 	if(_build_tests)
 		set(_headers ${Headers})
 		list(TRANSFORM _headers PREPEND include/${LibName}/ )
