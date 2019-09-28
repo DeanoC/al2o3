@@ -1,5 +1,6 @@
-MACRO(ADD_LIB_TESTS LibName Headers Tests Deps, BUILD_TESTS)
-	if(BUILD_TESTS)
+MACRO(ADD_LIB_TESTS LibName Headers Tests Deps)
+	get_property(_build_tests GLOBAL PROPERTY GLOBAL_BUILD_TESTS)
+	if(_build_tests)
 		set(_headers ${Headers})
 		list(TRANSFORM _headers PREPEND include/${LibName}/ )
 
