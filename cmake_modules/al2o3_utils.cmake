@@ -10,7 +10,14 @@ MACRO(SET_MIN_VERSIONS)
 	set(CMAKE_C_STANDARD 11)
 
 ENDMACRO()
-
+MACRO(SET_MIN_VERSIONS)
+	set_property(GLOBAL PROPERTY GLOBAL_FETCHDEPS_BASE ${PARENT_DIR}/al2o3 )
+	set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/out_libs)
+	set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/out_bin)
+	set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/out_bin)
+	set(LIB_BASE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/src/libs/)
+	SET_MIN_VERSIONS()
+ENDMACRO()
 if(APPLE)
 	# We need to compile the interface builder *.xib files to *.nib files to add to the bundle
 	# Make sure we can find the 'ibtool' program. If we can NOT find it we skip generation of this project
