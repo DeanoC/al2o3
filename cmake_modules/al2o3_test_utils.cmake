@@ -23,6 +23,9 @@ if(unittests)
 		if (APPLE)
 			target_link_libraries(test_${LibName} PRIVATE stdc++ "-framework Foundation" "-framework Cocoa" objc)
 		endif ()
+		add_test(NAME test_${LibName} 
+			COMMAND test_${LibName}
+			WORKING_DIRECTORY ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
 	endif ()
 endif()
 ENDMACRO()
@@ -77,6 +80,9 @@ if(unittests)
 					RESOURCE MainMenu.nib
 					)
 		endif()
+		add_test(NAME test_${LibName} 
+			COMMAND test_${LibName}
+			WORKING_DIRECTORY ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
 	endif ()
 endif()
 ENDMACRO()
