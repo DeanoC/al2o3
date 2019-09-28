@@ -2,6 +2,8 @@ include (FetchContent)
 
 set( CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake_modules)
 
+option(unittests "unittests" OFF)
+
 include(al2o3_utils)
 include(al2o3_fetch_utils)
 include(al2o3_app_utils)
