@@ -12,7 +12,7 @@ MACRO(ADD_CONSOLE_APP AppName Src Deps)
 	endforeach ()
 	set_target_properties(${AppName} 
 		PROPERTIES
-			RUNTIME_OUTPUT_DIRECTORY_RELEASE ${_SOURCE_DIR}/out_bin )
+			RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_RUNTIME_OUTPUT_DIRECTORY} )
 
 
 	if (APPLE)
@@ -32,7 +32,7 @@ MACRO(ADD_GUI_APP AppName Src Deps ShellInterface)
 	endforeach ()
 	set_target_properties(${AppName} 
 		PROPERTIES
-			RUNTIME_OUTPUT_DIRECTORY_RELEASE ${_SOURCE_DIR}/out_bin )
+			RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_RUNTIME_OUTPUT_DIRECTORY} )
 
 	if (APPLE)
 		if( NOT "Info.plist.in" IN_LIST Src)
