@@ -86,3 +86,17 @@ if(unittests)
 	endif ()
 endif()
 ENDMACRO()
+MACRO(ADD_LIB_TESTVECTORS LibName)
+if(unittests)
+	include(CTest)
+	DECLARE_FETCH(
+		${LibName}_testvectors
+		https://github.com/DeanoC/${LibName}_testvectors.git
+		master)
+	FetchContent_GetProperties(${LibName}_testvectors)
+	if (NOT ${LibName}_testvectors_POPULATED)
+		FetchContent_Populate(${LibName}_testvectors)
+	endif ()
+	file(COPY ${LibName}_testvectors_SOURCE_DIR}/test_data DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
+endif()
+ENDMACRO()
