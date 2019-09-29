@@ -100,3 +100,17 @@ if(unittests)
 	file(COPY ${${LibName}_testvectors_SOURCE_DIR}/. DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/test_data/${LibName}/)
 endif()
 ENDMACRO()
+MACRO(ADD_EXTERNAL_TESTVECTORS LibName, url)
+if(unittests)
+	include(CTest)
+	DECLARE_FETCH(
+		${LibName}_ext_testvectors
+		${url}
+		master)
+	FetchContent_GetProperties(${LibName}_ext_testvectors)
+	if (NOT ${LibName}_ext_testvectors_POPULATED)
+		FetchContent_Populate(${LibName}_ext_testvectors)
+	endif ()
+	file(COPY ${${LibName}_ext_testvectors_SOURCE_DIR}/. DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/test_data/${LibName}/)
+endif()
+ENDMACRO()
