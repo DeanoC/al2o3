@@ -10,6 +10,10 @@ MACRO(ADD_CONSOLE_APP AppName Src Deps)
 		FETCH_DEPENDENCY(${deplibname})
 		target_link_libraries(${AppName} PRIVATE ${deplibname})
 	endforeach ()
+	set_target_properties(${AppName} 
+		PROPERTIES
+			RUNTIME_OUTPUT_DIRECTORY_RELEASE ${_SOURCE_DIR}/out_bin )
+
 
 	if (APPLE)
 		target_link_libraries(${AppName} PRIVATE stdc++ "-framework Foundation" "-framework Cocoa" objc)
@@ -26,6 +30,9 @@ MACRO(ADD_GUI_APP AppName Src Deps ShellInterface)
 		FETCH_DEPENDENCY(${deplibname})
 		target_link_libraries(${AppName} PRIVATE ${deplibname})
 	endforeach ()
+	set_target_properties(${AppName} 
+		PROPERTIES
+			RUNTIME_OUTPUT_DIRECTORY_RELEASE ${_SOURCE_DIR}/out_bin )
 
 	if (APPLE)
 		if( NOT "Info.plist.in" IN_LIST Src)
