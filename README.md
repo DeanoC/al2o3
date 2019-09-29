@@ -1,7 +1,9 @@
 # al2o3
-al2o3 (Aluminium Oxide) is a distrubition of libraries for games. It designed to offer the simplicity of a package manager like Debians APT but for source code libraries and with minimal dependency. In fact its 7 lines to setup (cut and paste from below) and another 3 for a basic exe using libraries within the al2o3 framework.
+al2o3 (Aluminium Oxide) is a distrubition of libraries for games. It designed to offer the simplicity of a package manager like Debians APT but for source code libraries with minimal friction to you the user of a particular library. A short boot strap peices of CMAKE (below) hooks your cmake up to the al2o3 distrubition. There you can easily add a depedency on any of the libraries it supports and it will download, compile, link and setup paths to the public interfaces for you.
 
-Its based on CMake and github and relys on al2o3 basically being a curated list of libraries. Libraries are availible with C bindings, C++ bindings and coming soon rust binding. Swift is also another language waiting in the wings.
+Its based on CMake (min 3.12.4) uses github (any git repo really) and relys on al2o3 basically being a curated list of libraries. Libraries are availible with C bindings, a few C++ bindings and coming soon rust bindings. Swift is also another language waiting in the wings. The none C bindings are at the bottom end of long list of things to do but will happen.
+
+Theres a github project page https://github.com/users/DeanoC/projects/1
 
 The actual libraries are pulled from many open source projects, with often thin interfaces to make them work well together and in the same style as each other.
 
