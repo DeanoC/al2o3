@@ -61,5 +61,24 @@ MACRO(ADD_GUI_APP AppName Src Deps ShellInterface)
 				MACOSX_BUNDLE_INFO_PLIST ${CMAKE_CURRENT_BINARY_DIR}/Info.plist.in
 				RESOURCE MainMenu.nib
 				)
+		if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/LICENSE)
+			configure_file(${CMAKE_CURRENT_SOURCE_DIR}/LICENSE
+					${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/LICENSE COPYONLY)
+		endif()
+
+		if(EXISTS ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/LIBRARY_LICENSES)
+			file(REMOVE ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/LIBRARY_LICENSES)
+		endif()
+
+		file(GLOB _licenses ${CMAKE_ARCHIVE_OUTPUT_DIRECTORY}/*_LICENSE )
+		foreach (_licensefile ${_licenses})
+			get_filename_component(_liclibname ${_licensefile} NAME)
+			file(READ ${_licensefile} tmp)
+
+			set(header "\r\n" ${_liclibname} "\r\n-------------------------------------\r\n")
+			file(APPEND ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/LIBRARY_LICENSES ${header})
+			file(APPEND ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/LIBRARY_LICENSES ${tmp})
+		endforeach()
+
 	endif()
 ENDMACRO()
