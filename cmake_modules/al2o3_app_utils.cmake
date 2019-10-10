@@ -20,7 +20,7 @@ MACRO(ADD_CONSOLE_APP AppName Src Deps)
 	endif ()
 ENDMACRO()
 
-MACRO(ADD_GUI_APP AppName Src Deps ShellInterface)
+MACRO(ADD_GUI_APP AppName Src Deps)
 	set(_src ${Src})
 	set(_deps ${Deps} )
 	add_executable(${AppName} WIN32 MACOSX_BUNDLE ${_src} ${_headers})
@@ -35,32 +35,26 @@ MACRO(ADD_GUI_APP AppName Src Deps ShellInterface)
 			RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_RUNTIME_OUTPUT_DIRECTORY} )
 
 	if (APPLE)
-		if( NOT "Info.plist.in" IN_LIST Src)
-			configure_file(${${ShellInterface}_SOURCE_DIR}/default_macresources/Info.plist.in
-					${CMAKE_CURRENT_BINARY_DIR}/Info.plist.in COPYONLY)
-		endif()
-		set(_src_mainmenu_xib ${${ShellInterface}_SOURCE_DIR}/default_macresources/MainMenu.xib)
-
-		if(  "MainMenu.xib" IN_LIST Tests)
-			set(_src_mainmenu_xib ${CMAKE_CURRENT_SOURCE_DIR}/Src/MainMenu.xib)
-		endif()
-		target_sources(${AppName} PRIVATE MainMenu.nib)
-
-		add_custom_command(
-				OUTPUT MainMenu.nib
-				COMMAND ${IBTOOL} --output-format binary1 --compile MainMenu.nib ${_src_mainmenu_xib}
-		)
-
-		if( NOT "appdelegate.h" IN_LIST Tests)
-			target_sources(${AppName} PRIVATE ${${ShellInterface}_SOURCE_DIR}/default_macresources/appdelegate.h)
-			target_sources(${AppName} PRIVATE ${${ShellInterface}_SOURCE_DIR}/default_macresources/appdelegate.m)
-		endif()
 		target_link_libraries(${AppName} PRIVATE stdc++ "-framework Foundation" "-framework Cocoa" objc)
-		set_target_properties(${AppName} PROPERTIES
-				MACOSX_BUNDLE_GUI_IDENTIFIER com.al2o3.${AppName}
-				MACOSX_BUNDLE_INFO_PLIST ${CMAKE_CURRENT_BINARY_DIR}/Info.plist.in
-				RESOURCE MainMenu.nib
-				)
+		foreach (s ${_src})
+			get_filename_component(sname ${s} NAME)
+			if( "Info.plist.in" STREQUAL ${sname})
+				set( INFO_PLIST_IN ${s})
+			endif()
+		endforeach ()
+
+		if( EXISTS ${INFO_PLIST_IN} )
+			# work around relative path issue
+			configure_file(${INFO_PLIST_IN} ${CMAKE_CURRENT_BINARY_DIR}/Info.plist.in COPYONLY)
+
+			set_target_properties(${AppName} PROPERTIES
+					MACOSX_BUNDLE_INFO_PLIST ${CMAKE_CURRENT_BINARY_DIR}/Info.plist.in
+					MACOSX_BUNDLE_GUI_IDENTIFIER com.al2o3.${AppName} )
+		else()
+			set_target_properties(${AppName} PROPERTIES
+					MACOSX_BUNDLE_GUI_IDENTIFIER com.al2o3.${AppName} )
+		endif()
+
 		if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/LICENSE)
 			configure_file(${CMAKE_CURRENT_SOURCE_DIR}/LICENSE
 					${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/LICENSE COPYONLY)
