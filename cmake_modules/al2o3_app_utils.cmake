@@ -40,16 +40,26 @@ MACRO(ADD_GUI_APP AppName Src Deps)
 			get_filename_component(sname ${s} NAME)
 			if( "Info.plist.in" STREQUAL ${sname})
 				set( INFO_PLIST_IN ${s})
+				configure_file(${INFO_PLIST_IN} ${CMAKE_CURRENT_BINARY_DIR}/Info.plist.in COPYONLY)
 			endif()
+			if( "entitlements.plist" STREQUAL ${sname} )
+				set( ENTITLEMENTS_PLIST ${s})
+				configure_file(${ENTITLEMENTS_PLIST} ${CMAKE_CURRENT_BINARY_DIR}/${AppName}.entitlements COPYONLY)
+			endif()
+
 		endforeach ()
 
-		if( EXISTS ${INFO_PLIST_IN} )
-			# work around relative path issue
-			configure_file(${INFO_PLIST_IN} ${CMAKE_CURRENT_BINARY_DIR}/Info.plist.in COPYONLY)
-
+		if( EXISTS ${INFO_PLIST_IN} AND EXISTS ${ENTITLEMENTS_PLIST} )
 			set_target_properties(${AppName} PROPERTIES
 					MACOSX_BUNDLE_INFO_PLIST ${CMAKE_CURRENT_BINARY_DIR}/Info.plist.in
-					MACOSX_BUNDLE_GUI_IDENTIFIER com.al2o3.${AppName} )
+					MACOSX_BUNDLE_GUI_IDENTIFIER com.al2o3.${AppName}
+					XCODE_ATTRIBUTE_CODE_SIGN_ENTITLEMENTS "${CMAKE_CURRENT_LIST_DIR}/${AppName}.entitlements"
+					)
+		elseif( EXISTS ${INFO_PLIST_IN})
+			set_target_properties(${AppName} PROPERTIES
+					MACOSX_BUNDLE_INFO_PLIST ${CMAKE_CURRENT_BINARY_DIR}/Info.plist.in
+					MACOSX_BUNDLE_GUI_IDENTIFIER com.al2o3.${AppName}
+					)
 		else()
 			set_target_properties(${AppName} PROPERTIES
 					MACOSX_BUNDLE_GUI_IDENTIFIER com.al2o3.${AppName} )
