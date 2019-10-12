@@ -23,15 +23,6 @@ DECLARE_FETCH(
         https://github.com/DeanoC/gfx_imagedecompress
         master)
 DECLARE_FETCH(
-       gfx_meshmod
-        https://github.com/DeanoC/gfx_meshmod
-        master)
-DECLARE_FETCH(
-       gfx_meshmodio
-        https://github.com/DeanoC/gfx_meshmodio
-        master)
-
-DECLARE_FETCH(
        gfx_theforge
         https://github.com/DeanoC/The-Forge
         master)
