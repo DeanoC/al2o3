@@ -36,6 +36,9 @@ MACRO(ADD_GUI_APP AppName Src Deps)
 
 	if (APPLE)
 		target_link_libraries(${AppName} PRIVATE stdc++ "-framework Foundation" "-framework Cocoa" objc)
+		set( INFO_PLIST_IN "")
+		set( ENTITLEMENTS_PLIST "")
+
 		foreach (s ${_src})
 			get_filename_component(sname ${s} NAME)
 			if( "Info.plist.in" STREQUAL ${sname})
