@@ -35,6 +35,7 @@ MACRO(ADD_GUI_APP AppName Src Deps)
 			RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_RUNTIME_OUTPUT_DIRECTORY} )
 
 	if (APPLE)
+		SET(CMAKE_BUILD_WITH_INSTALL_RPATH TRUE)
 		target_link_libraries(${AppName} PRIVATE stdc++ "-framework Foundation" "-framework Cocoa" objc)
 		set( INFO_PLIST_IN "NONE")
 		set( ENTITLEMENTS_PLIST "NONE")
