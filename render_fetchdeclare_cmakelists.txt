@@ -14,4 +14,7 @@ DECLARE_FETCH(
        render_meshmodio
         https://github.com/DeanoC/render_meshmodio
         master)
-
+DECLARE_FETCH(
+       render_meshmodplatonicsolids
+        https://github.com/DeanoC/render_meshmodplatonicsolids
+        master)
