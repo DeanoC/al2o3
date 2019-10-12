@@ -15,6 +15,6 @@ DECLARE_FETCH(
         https://github.com/DeanoC/render_meshmodio
         master)
 DECLARE_FETCH(
-       render_meshmodplatonicsolids
-        https://github.com/DeanoC/render_meshmodplatonicsolids
+       render_meshmodshapes
+        https://github.com/DeanoC/render_meshmodshapes
         master)
