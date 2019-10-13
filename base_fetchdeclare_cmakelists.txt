@@ -62,6 +62,11 @@ DECLARE_FETCH(
         master)
 
 DECLARE_FETCH(
+       al2o3_handle
+        https://github.com/DeanoC/al2o3_handle.git
+        master)
+
+DECLARE_FETCH(
        base_pxfoundations
        https://github.com/DeanoC/base_pxfoundations.git
        master)
