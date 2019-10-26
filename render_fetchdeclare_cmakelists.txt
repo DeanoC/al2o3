@@ -18,3 +18,7 @@ DECLARE_FETCH(
        render_meshmodshapes
         https://github.com/DeanoC/render_meshmodshapes
         master)
+DECLARE_FETCH(
+       render_meshmodrender
+        https://github.com/DeanoC/render_meshmodrender
+        master)
