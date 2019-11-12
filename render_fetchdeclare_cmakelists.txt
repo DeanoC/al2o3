@@ -11,6 +11,10 @@ DECLARE_FETCH(
         https://github.com/DeanoC/render_meshmod
         master)
 DECLARE_FETCH(
+       render_basicforward
+        https://github.com/DeanoC/render_basicforward
+        master)        
+DECLARE_FETCH(
        render_meshmodio
         https://github.com/DeanoC/render_meshmodio
         master)
