@@ -53,8 +53,11 @@ MACRO(ADD_LIB2 LibName Src Deps)
 		list(LENGTH _srcs _SrcLength)
 	endif()
 
+	set(_absResources "")
+	file(GLOB_RECURSE _absResources CONFIGURE_DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/resources/*)
+
 	if(_SrcLength)
-		add_library( ${LibName} ${_srcs} )
+		add_library( ${LibName} ${_srcs} ${_absResources})
 
 		foreach (_dep ${_deps})
 			get_filename_component(deplibname ${_dep} NAME)
@@ -83,6 +86,11 @@ MACRO(ADD_LIB2 LibName Src Deps)
 		configure_file(${CMAKE_CURRENT_SOURCE_DIR}/LICENSE
 				${CMAKE_ARCHIVE_OUTPUT_DIRECTORY}/${LibName}_LICENSE COPYONLY)
 	endif()
+
+	foreach(_absResource ${_absResources})
+		file(RELATIVE_PATH _relResource ${CMAKE_CURRENT_SOURCE_DIR}/resources/ ${_absResource})
+		file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/resources/${_relResource} DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/resources/)
+	endforeach()
 
 ENDMACRO()
 
